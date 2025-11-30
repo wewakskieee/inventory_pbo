@@ -141,7 +141,7 @@ inventory-system/
 ├── composer.json
 ├── license
 └── README.md 
-
+'''
 text
 
 ## Requirements
