@@ -98,58 +98,49 @@ text
 
 ## Struktur Project
 
-inventory-system/
-├── config/
-│   └── Database.php
-│
-├── src/
-│   ├── Core/
-│   │   ├── Application.php
-│   │   └── Router.php
-│   │
-│   ├── Request.php
-│
-│   ├── Database/
-│   │   ├── ConnectionInterface.php
-│   │   ├── QueryBuilder.php
-│   │   └── DatabaseException.php
-│
-│   ├── Models/
-│   │   ├── BaseModel.php
-│   │   ├── Product.php
-│   │   └── Category.php
-│
-│   ├── Controllers/
-│   │   ├── BaseController.php
-│   │   ├── ProductController.php
-│   │   └── CategoryController.php
-│
-│   ├── Services/
-│   │   ├── ValidatorInterface.php
-│   │   ├── ProductValidator.php
-│   │   └── ValidationException.php
-│
-│   └── Repositories/
-│       ├── RepositoryInterface.php
-│       ├── ProductRepository.php
-│       └── CategoryRepository.php
-│
-├── public/
-│   ├── css/
-│   │   └── style.css
-│   ├── js/
-│   │   └── app.js
-│   └── index.php
-│
-├── docs/
-│   ├── class-diagram.png
-│   └── screenshots/
-│       └── dashboard.png
-│
-├── README.md
-├── .env.example
-├── composer.json
-└── license
+- **inventory-system**
+  - **config**
+    - Database.php
+  - **src**
+    - **Core**
+      - Application.php  
+      - Router.php  
+    - Request.php
+    - **Database**
+      - ConnectionInterface.php  
+      - QueryBuilder.php  
+      - DatabaseException.php  
+    - **Models**
+      - BaseModel.php  
+      - Product.php  
+      - Category.php  
+    - **Controllers**
+      - BaseController.php  
+      - ProductController.php  
+      - CategoryController.php  
+    - **Services**
+      - ValidatorInterface.php  
+      - ProductValidator.php  
+      - ValidationException.php  
+    - **Repositories**
+      - RepositoryInterface.php  
+      - ProductRepository.php  
+      - CategoryRepository.php  
+  - **public**
+    - **css**
+      - style.css  
+    - **js**
+      - app.js  
+    - index.php
+  - **docs**
+    - class-diagram.png  
+    - **screenshots**
+      - dashboard.png  
+  - README.md  
+  - .env.example  
+  - composer.json  
+  - license
+
 
 
 ## Requirements
