@@ -100,51 +100,47 @@ text
 
 inventory-system/
 ├── config/
-│ └── Database.php 
+│   └── Database.php
 ├── src/
-│ ├── Core/
-│ │ ├── Application.php 
-│ │ ├── Router.php
-│ │ └── Request.php
-│ ├── Database/
-│ │ ├── ConnectionInterface.php
-│ │ └── QueryBuilder.php 
-│ ├── Models/
-│ │ ├── BaseModel.php 
-│ │ ├── Product.php
-│ │ ├── Category.php 
-│ │ └── User.php
-│ ├── Controllers/
-│ │ ├── BaseController.php 
-│ │ ├── ProductController.php 
-│ │ └── CategoryController.php
-│ ├── Services/
-│ │ ├── ValidatorInterface.php
-│ │ ├── ProductValidator.php 
-│ │ └── ProductService.php 
-│ ├── Repositories/
-│ │ ├── RepositoryInterface.php
-│ │ └── ProductRepository.php
-│ │ ├── ValidationException.php
-│ │ └── DatabaseException.php
-│ └── Views/
-│ └── ResponseFormatter.php 
+│   ├── Core/
+│   │   ├── Application.php
+│   │   ├── Router.php
+│   │   └── Request.php
+│   ├── Database/
+│   │   ├── ConnectionInterface.php
+│   │   ├── QueryBuilder.php
+│   │   └── DatabaseException.php
+│   ├── Models/
+│   │   ├── BaseModel.php
+│   │   ├── Product.php
+│   │   └── Category.php
+│   ├── Controllers/
+│   │   ├── BaseController.php
+│   │   ├── ProductController.php
+│   │   └── CategoryController.php
+│   ├── Services/
+│   │   ├── ValidatorInterface.php
+│   │   ├── ProductValidator.php
+│   │   └── ValidationException.php
+│   └── Repositories/
+│       ├── RepositoryInterface.php
+│       ├── ProductRepository.php
+│       └── CategoryRepository.php
 ├── public/
-│ ├── index.php
-│ ├── api.php
-│ ├── dashboard.html 
-│ ├── css/
-│ │ └── style.css 
-│ └── js/
-│ └── app.js 
+│   ├── css/
+│   │   └── style.css
+│   ├── js/
+│   │   └── app.js
+│   └── index.php
 ├── docs/
-│ ├── class-diagram.png
-│ └── screenshots/ 
-├── database.sql 
-├── composer.json  
-├── .gitignore 
-├── .env.example 
-└── README.md  
+│   ├── class-diagram.png
+│   ├── screenshots/
+│   │   └── dashboard.png
+│   └── README.md
+├── .env.example
+├── composer.json
+├── license
+└── README.md 
 
 text
 
