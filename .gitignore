@@ -1,0 +1,39 @@
+# Composer
+/vendor/
+composer.lock
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+
+# Cache
+cache/
+temp/
+tmp/
+
+# Upload folders (jika ada)
+uploads/
+storage/
+
+# Node modules (jika pakai npm)
+node_modules/
+
+# Build files
+dist/
+build/

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory - Sistem Inventaris</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1>Inventory</h1>
+                <div>
+                    <span class="badge badge-success">Online</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="alert alert-success" id="alertSuccess"></div>
+        <div class="alert alert-error" id="alertError"></div>
+
+        <div class="controls">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Cari berdasarkan nama, SKU, atau deskripsi...">
+            </div>
+            <div class="filter-box">
+                <select id="categoryFilter">
+                    <option value="">Semua Kategori</option>
+                </select>
+            </div>
+            <button class="btn btn-primary" onclick="openAddModal()">Tambah Produk</button>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>SKU</th>
+                        <th>Nama Produk</th>
+                        <th>Kategori</th>
+                        <th>Stok</th>
+                        <th>Harga</th>
+                        <th>Status</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody id="productTableBody">
+                    <tr>
+                        <td colspan="7" class="loading">Memuat data...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <!-- Modal Form -->
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">Tambah Produk</h2>
+                <button class="close-modal" onclick="closeModal()">&times;</button>
+            </div>
+
+            <form id="productForm" onsubmit="submitForm(event)">
+                <input type="hidden" id="productId">
+
+                <div class="form-group">
+                    <label>SKU</label>
+                    <input type="text" id="sku" name="sku" required>
+                    <span class="form-error" id="skuError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label>Nama Produk</label>
+                    <input type="text" id="name" name="name" required>
+                    <span class="form-error" id="nameError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label>Deskripsi</label>
+                    <textarea id="description" name="description"></textarea>
+                    <span class="form-error" id="descriptionError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label>Kategori</label>
+                    <select id="category_id" name="category_id" required>
+                        <option value="">Pilih Kategori</option>
+                    </select>
+                    <span class="form-error" id="category_idError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label>Jumlah Stok</label>
+                    <input type="number" id="quantity" name="quantity" min="0" required>
+                    <span class="form-error" id="quantityError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label>Harga (Rp)</label>
+                    <input type="number" id="price" name="price" min="0" step="0.01" required>
+                    <span class="form-error" id="priceError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label>Minimum Stok</label>
+                    <input type="number" id="minimum_stock" name="minimum_stock" min="0" required>
+                    <span class="form-error" id="minimum_stockError"></span>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" onclick="closeModal()">Batal</button>
+                    <button type="submit" class="btn btn-primary">Simpan</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

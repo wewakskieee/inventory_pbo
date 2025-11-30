@@ -1,0 +1,13 @@
+{
+    "name": "inventorypro/app",
+    "description": "Sistem Inventaris Barang",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/",
+            "Config\\": "config/"
+        }
+    },
+    "require": {
+        "php": ">=7.4"
+    }
+}
